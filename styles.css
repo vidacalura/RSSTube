@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+
+    font-family: 'Ubuntu', sans-serif; 
+
+}
+.card-img{
+
+    @apply hover:scale-105 transition ease-in-out cursor-pointer;
+
+}
+.card h3{
+
+    @apply px-2 py-3 text-lg text-white;
+
+}
+.card h4{
+
+    @apply pl-5 text-base text-gray-100;
+
+}
+.img{
+
+    @apply rounded w-full;
+
+}
+.badge-tempo{
+
+    @apply absolute text-xs font-semibold top-0 cursor-default tempo;
+
+}
+.tempo{
+
+    @apply bg-gray-500 text-white opacity-90 p-2 m-2 rounded-full shadow-md;
+
+}
+nav li{
+
+    @apply ml-3 text-gray-100 hover:scale-105 hover:text-white pb-1 hover:border-b hover:border-blue;
+
+}
+.active{
+
+    @apply text-blue hover:text-blue;
+
+}
+.main-home h2{
+
+    @apply font-bold text-2xl pb-2 border-b border-gray-200;
+
+}
+
+.spacer{
+
+    aspect-ratio: 900/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.vidacalura{
+
+    margin-top: -200px;
+
+}
+.colaborador{
+
+    @apply rounded-full bg-gray-500 border-2 border-gray-100 opacity-75 mb-1;
+
+}
