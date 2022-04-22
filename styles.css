@@ -24,7 +24,8 @@ body{
     @apply px-2 py-3 text-lg text-white;
 
 }
-.card h4{
+.card h4,
+.div-video h4{
 
     @apply pl-5 text-base text-gray-100;
 
@@ -80,15 +81,6 @@ nav li{
     margin-top: -155px;
 
 }
-@media only screen and (max-width: 600px){
-
-    .vidacalura{
-
-        margin-top: -80px; 
-
-    }
-
-} 
 .colaborador{
 
     @apply rounded-full bg-gray-500 border-2 border-gray-100 opacity-75 mb-1;
@@ -106,6 +98,75 @@ nav li{
 .txtbox{
 
     @apply mb-8 p-2 rounded shadow-sm;
+
+}
+.video{
+
+    @apply rounded w-96 shadow-md;
+    margin: 0 auto;
+    width: 18.7em;
+    height: 10.5em;
+
+}
+/*
+.video-niconico{
+
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.text-niconico{
+
+    top: 78vh;
+    position: absolute;
+
+}
+*/
+.div-video h3{
+
+    @apply text-xl font-normal;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .vidacalura{
+
+        margin-top: -80px; 
+
+    }
+
+} 
+@media only screen and (min-width: 950px){
+
+    .video{
+
+        width: 56em;
+        height: 31.5em;
+
+    }
+
+} 
+@media only screen and (min-width: 700px) and (max-width: 949px) {
+
+    .video{
+
+        width: 42em;
+        height: 23.625em;
+        
+    }
+
+}
+@media only screen and (min-width: 460px) and (max-width: 699px) {
+
+    .video{
+
+        width: 28em;
+        height: 15.75em;
+        
+    }
 
 }
 
