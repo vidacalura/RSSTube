@@ -4,6 +4,7 @@ Este site baseia-se na ideia de feeds RSS, em que você pode acessar diferentes 
 
 Plataformas aceitas:
 - Youtube
+- Odysee / LBRY
 
 #
 
