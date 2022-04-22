@@ -6,7 +6,12 @@
 
 *{
 
-    font-family: 'Ubuntu', sans-serif; 
+    font-family: 'Ubuntu', sans-serif;
+
+}
+body{
+
+    overflow-x: hidden; 
 
 }
 .card-img{
@@ -39,6 +44,11 @@
     @apply bg-gray-500 text-white opacity-90 p-2 m-2 rounded-full shadow-md;
 
 }
+.navbar{
+
+    @apply opacity-80 bg-gray-400 flex w-full fixed z-10 justify-between shadow-md h-16;
+
+}
 nav li{
 
     @apply ml-3 text-gray-100 hover:scale-105 hover:text-white pb-1 hover:border-b hover:border-blue;
@@ -67,11 +77,49 @@ nav li{
 
 .vidacalura{
 
-    margin-top: -200px;
+    margin-top: -155px;
 
 }
+@media only screen and (max-width: 600px){
+
+    .vidacalura{
+
+        margin-top: -80px; 
+
+    }
+
+} 
 .colaborador{
 
     @apply rounded-full bg-gray-500 border-2 border-gray-100 opacity-75 mb-1;
+
+}
+.cad-div{
+
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.txtbox{
+
+    @apply mb-8 p-2 rounded shadow-sm;
+
+}
+
+
+body::-webkit-scrollbar {
+
+    width: 6px; 
+
+}
+body::-webkit-scrollbar-thumb{
+
+    height: 10%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 3px solid darkgray;
 
 }
