@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./CSS/output.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/de94e301a2.js" crossorigin="anonymous"></script>
+        <script src="JS/script.js" defer>  </script>
         <title> RSSTube </title>
 
     </head>
@@ -26,9 +27,16 @@
             
             <div class="justify-end">
                 <ul class="p-5 flex">
-                    <li> <a href="sobre.html#"> Sobre </a> </li>
-                    <li> <a href="login.html#"> Log in </a> </li>
-                    <li> <a href="cad.html#"> Cadastro </a> </li>
+                    <li class="no-underline relative dropdown-icon"> 
+                        <i class="fa fa-user hover:scale-110" id="menu-icon"></i> 
+                        <!-- Dropdown Menu do usuário -->
+                        <ul class="dropdown-user hidden absolute overflow-hidden right-0 top-5 w-40 bg-gray-400 rounded-b shadow-2xl" id="ul-dropdown">
+                            <li id="edit-channel" class="dropdown-item"> Editar canais </li>
+                            <li id="channels" class="dropdown-item"> Listar por canal </li>
+                            <li id="user-config" class="dropdown-item"> Configurações </li>
+                            <li id="user-logout" class="dropdown-item"> Sair </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -37,10 +45,10 @@
             <!-- Seus vídeos -->
             <section>
                 <h2> Vídeos recentes: </h2>
-                <p class="px-4 text-xl py-28 text-center lg:text-2xl"> Crie uma conta para cadastrar seus canais favoritos. </p>
-                <!-- Vídeos -> <div class="py-28 text-center grid grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Vídeos -->
+                <div class="py-28 text-center grid grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                </div> -->
+                </div>
             </section>
 
             <!-- Vídeos populares -->

@@ -50,9 +50,24 @@ body{
     @apply opacity-80 bg-gray-400 flex w-full fixed z-10 justify-between shadow-md h-16;
 
 }
-nav li{
+nav ul li{
 
     @apply ml-3 text-gray-100 hover:scale-105 hover:text-white pb-1 hover:border-b hover:border-blue;
+
+}
+.no-underline{
+
+    @apply hover:border-none hover:scale-100 cursor-pointer;
+
+}
+.dropdown-icon:target .dropdown-user{
+
+    display: block;
+
+}
+.dropdown-item{
+
+    @apply m-0 p-2 px-4 no-underline hover:scale-100 hover:bg-gray-500;
 
 }
 .active{
