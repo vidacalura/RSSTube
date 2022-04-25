@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="./CSS/output.css">
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/de94e301a2.js" crossorigin="anonymous"></script>
+        <script src="JS/script.js" defer>  </script>
         <title> RSSTube </title>
 
     </head>
@@ -21,14 +22,21 @@
             <!-- Menu de navegação -->
             <div>
                 <!-- Logo -->
-                <h1 class="p-5 pl-6 font-bold text-white"> <a href="index.html#"> RSSTube </a> </h1>
+                <h1 class="p-5 pl-6 font-bold text-white"> <a href="loggedindex.html#"> RSSTube </a> </h1>
             </div>
             
             <div class="justify-end">
                 <ul class="p-5 flex">
-                    <li> <a href="sobre.html#"> Sobre </a> </li>
-                    <li> <a href="login.php#"> Log in </a> </li>
-                    <li> <a href="cad.php#"> Cadastro </a> </li>
+                    <li class="no-underline relative dropdown-icon"> 
+                        <i class="fa fa-user hover:scale-110" id="menu-icon"></i> 
+                        <!-- Dropdown Menu do usuário -->
+                        <ul class="dropdown-user hidden absolute overflow-hidden right-0 top-5 w-40 bg-gray-400 rounded-b shadow-2xl" id="ul-dropdown">
+                            <a href=""> <li id="edit-channel" class="dropdown-item"> Editar canais </li> </a>
+                            <a href=""> <li id="channels" class="dropdown-item"> Listar por canal </li> </a>
+                            <a href=""> <li id="user-config" class="dropdown-item"> Configurações </li> </a>
+                            <a href="index.html"> <li id="user-logout" class="dropdown-item"> Sair </li> </a>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -37,10 +45,10 @@
             <!-- Seus vídeos -->
             <section>
                 <h2> Vídeos recentes: </h2>
-                <p class="px-4 text-xl py-28 text-center lg:text-2xl"> Crie uma conta para cadastrar seus canais favoritos. </p>
-                <!-- Vídeos -> <div class="py-28 text-center grid grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Vídeos -->
+                <div class="py-28 text-center grid grid-cols-2 lg:grid-cols-3 gap-6">
                     
-                </div> -->
+                </div>
             </section>
 
             <!-- Vídeos populares -->
@@ -62,12 +70,12 @@
                     <div class="card relative">
                         <a href="video2.html">
                             <div class="card-img">
-                                <img src="https://i.ytimg.com/vi/1tk1pqwrOys/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAtJxyxcFvdrzWY5gfmK7zizyz9hA" alt="Thumbnail" class="img">
-                                <p class="badge-tempo"> 3:44 </p>
+                                <img src="https://i.ytimg.com/vi/bjS0HPZAWJM/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCI8WipvJjha1enEEkquH2elx4tKQ" alt="Thumbnail" class="img">
+                                <p class="badge-tempo"> 2:23 </p>
                             </div>
-                            <h3> Kaikan Kitan - Eve </h3>
+                            <h3> 【初音ミク】アイロニック【Kanaria】 </h3>
                         </a>
-                        <h4> From <i class="fab fa-spotify text-green-200 text-base"> </i> </h4>
+                        <h4> From <i class="fab fa-youtube text-red text-base"> </i> </h4>
                     </div>
                     <!-- Vídeo -->
                     <div class="card relative">

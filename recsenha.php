@@ -15,8 +15,8 @@
     </head>
 
 
-    <body class="bg-gray-500 text-white text-center">
-
+    <body class="bg-gray-500 text-white">
+        
         <nav class="navbar">
             <!-- Menu de navegação -->
             <div>
@@ -27,29 +27,21 @@
             <div class="justify-end">
                 <ul class="p-5 flex">
                     <li> <a href="sobre.html#"> Sobre </a> </li>
-                    <li> <a href="login.php#"> Log in </a> </li>
-                    <li> <a href="cad.php#"> Cadastro </a> </li>
+                    <li> <a href="login.html#"> Log in </a> </li>
+                    <li> <a href="cad.html#"> Cadastro </a> </li>
                 </ul>
             </div>
         </nav>
 
-        <main class="pt-20">
+        <main class="pt-32">
 
-            <div class="div-video">
-                <!-- Displayer -->
-                <iframe class="video" src="https://www.youtube.com/embed/xlU8pUQ7mn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
-            
-                <div class="p-4 px-32 xl:px-48 text-left">
-                    <!-- Views + Data -->
-                    <h3> 
-                        2,863,206 visualizações
-                        *
-                        Jun 22, 2021 
-                    </h3>
-                    <!-- From -->
-                    <h4> From <i class="fab fa-youtube text-red text-base"> </i> </h4>
-                </div>
-            </div>
+            <form action="POST" action="index.html" class="p-8 pt-10 w-96 text-center bg-gray-200 text-black cad-div rounded-md shadow-md">
+
+                <input type="text" name="email" placeholder="Email:" class="txtbox"> <br>
+
+                <input type="submit" value="Recuperar senha" class="text-white mt-4 bg-gray-400 p-2 px-3 rounded-full shadow-md hover:shadow-md hover:opacity-80 transition ease-in-out">
+
+            </form>
 
         </main>
 

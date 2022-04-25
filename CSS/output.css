@@ -764,6 +764,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(191 96 107 / var(--tw-text-opacity));
 }
 
+.text-green-200{
+  --tw-text-opacity: 1;
+  color: rgb(163 189 141 / var(--tw-text-opacity));
+}
+
 .text-gray-100{
   --tw-text-opacity: 1;
   color: rgb(228 234 241 / var(--tw-text-opacity));
