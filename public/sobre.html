@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" type="text/css" href="./CSS/output.css">
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/de94e301a2.js" crossorigin="anonymous"></script>
+        <title> RSSTube </title>
+
+    </head>
+
+
+    <body class="bg-gray-500 text-white text-center">
+
+        <nav class="navbar">
+            <!-- Menu de navegação -->
+            <div>
+                <!-- Logo -->
+                <h1 class="p-5 pl-6 font-bold text-white"> <a href="index.html#"> RSSTube </a> </h1>
+            </div>
+            
+            <div class="justify-end">
+                <ul class="p-5 flex">
+                    <li class="active"> <a href="sobre.html#"> Sobre </a> </li>
+                    <li> <a href="login.php#"> Log in </a> </li>
+                    <li> <a href="cad.php#"> Cadastro </a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="pt-20">
+
+            <div class="pt-40 pb-24 lg:pb-0">
+                <h1 class="text-6xl font-bold"> RSSTube </h1>
+                <h3 class="text-2xl text-gray-100"> Trazendo seus vídeos até você </h3>
+            </div>
+
+            <div class="spacer"> 
+                <img src="imgs/haikei1.svg" alt="" class="w-full">
+            </div>
+
+            <div class="bg-red px-8 pt-20 pb-48 lg:px-72" id="projeto">
+                <h2 class="text-3xl font-bold pb-2"> Sobre o projeto: </h2>
+
+                <!-- <hr> -->
+
+                <p class="pt-4 text-lg"> 
+                    Este projeto baseia-se na ideia de feeds RSS, em que você pode acessar diferentes
+                    conteúdos de diferentes plataformas em uma única aplicação, unindo vídeos de tudo 
+                    aquilo que você tenha interesse em um só local. <br> <br>
+                    O projeto é feito de forma 
+                    <a href="https://github.com/vidacalura/RSSTube" class="bg-yellow rounded text-white p-1"> 100% open source</a>,
+                    usando apenas HTML/CSS, (com uso do framework Tailwind CSS), 
+                    JavaScript e NodeJS para backend. <br> <br>
+                    Já são aceitas no site as plataformas do YouTube e Odysee/LBRY.
+                </p>
+            </div>
+
+            <div class="spacer"> 
+                <img src="imgs/haikei3.svg" alt="" class="w-full">
+            </div>
+
+            <div class="vidacalura pt-32 pb-16 px-4 lg:px-20 lg:pt-0 bg-gray-300">
+                <h2 class="text-3xl font-bold pb-20"> Colaboradores: </h2>
+
+                <!-- <hr> -->
+
+                <ul class="grid grid-cols-4 lg:grid-cols-8 gap-4 text-center">
+                    <li>
+                        <a href="https://github.com/vidacalura">
+                            <img src="https://avatars.githubusercontent.com/u/88943346?v=4" alt="Imagem GitHub Vidacalura" class="colaborador"> 
+                            <figcaption class="text-xs"> vidacalura </figcaption>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>
+
+<!-- niconico, spotify, youtube, odysee -->
